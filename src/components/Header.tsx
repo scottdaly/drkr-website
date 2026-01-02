@@ -1,4 +1,5 @@
 import { useState, useEffect } from 'react';
+import { Logo } from './Logo';
 
 export function Header() {
   const [isScrolled, setIsScrolled] = useState(false);
@@ -19,9 +20,7 @@ export function Header() {
     >
       <nav className="max-w-7xl mx-auto px-6 py-4 flex items-center justify-between">
         <div className="flex items-center gap-2">
-          <div className="w-8 h-8 rounded-lg bg-gradient-to-br from-gradient-purple to-gradient-blue flex items-center justify-center">
-            <span className="text-white font-bold text-sm">D</span>
-          </div>
+          <Logo className="w-12 h-12" />
           <span className="text-xl font-bold text-darker-text">Darker</span>
         </div>
 
@@ -45,7 +44,13 @@ export function Header() {
           </a>
         </div>
 
-        <div className="flex items-center gap-4">
+        <div className="flex items-center gap-3">
+          <a
+            href="/editor"
+            className="px-5 py-2 rounded-lg bg-darker-surface border border-darker-border hover:border-darker-border-light text-darker-text font-medium transition-colors"
+          >
+            Open in Browser
+          </a>
           <a
             href="#download"
             className="px-5 py-2 rounded-lg bg-darker-accent hover:bg-darker-accent-light text-white font-medium transition-colors"

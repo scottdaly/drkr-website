@@ -40,16 +40,16 @@ export function Hero() {
 
           <div className="flex flex-col sm:flex-row items-center justify-center gap-4">
             <a
-              href="#download"
+              href="/editor"
               className="w-full sm:w-auto px-8 py-4 rounded-xl bg-gradient-to-r from-darker-accent to-gradient-purple hover:from-darker-accent-light hover:to-gradient-purple text-white font-semibold text-lg transition-all hover:scale-105 hover:shadow-xl hover:shadow-darker-accent/20"
             >
-              Download for Free
+              Open in Browser
             </a>
             <a
-              href="#features"
+              href="#download"
               className="w-full sm:w-auto px-8 py-4 rounded-xl bg-darker-surface border border-darker-border hover:border-darker-border-light text-darker-text font-semibold text-lg transition-all hover:bg-darker-surface-light"
             >
-              Explore Features
+              Download App
             </a>
           </div>
         </div>
